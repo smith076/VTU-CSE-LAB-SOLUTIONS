@@ -19,9 +19,9 @@ public class lab4
 		for(int i=0; i<n; i++)
 			System.out.print(a[i]+" ");
 		a[n]=999;
-		start=System.nanoTime();
+		start=System.nanoTime();		//counting time start
 		quicksort(a,0,n-1);
-		end=System.nanoTime();
+		end=System.nanoTime();			//counting end
 	
 		System.out.println("\nThe sorted elements are");
 		for(int i=0; i<n; i++)

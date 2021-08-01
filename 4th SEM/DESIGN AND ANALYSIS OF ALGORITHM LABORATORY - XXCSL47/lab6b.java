@@ -8,14 +8,14 @@ public class lab6b
 	Scanner sc = new Scanner(System.in);
 	int array[][]=new int[2][20];
 	
-	System.out.println("Enter no of items");
+	System.out.println("Enter no of items");					//n=no.of items
 	n=sc.nextInt();
 	
-	System.out.println("Enter the weights of each items");
+	System.out.println("Enter the weights of each items");		//weights
 	for(i=0;i<n;i++)
 		array[0][i]=sc.nextInt();
 	
-	System.out.println("Enter the values of each items");
+	System.out.println("Enter the values of each items");		//profits
 	for(i=0;i<n;i++)
 		array[1][i]=sc.nextInt();
 	
@@ -30,14 +30,14 @@ public class lab6b
 		{
 			if(((float)array[1][i])/((float)array[0][i])>max)
 			{
-				max=((float)array[1][i])/((float)array[0][i]);
+				max=((float)array[1][i])/((float)array[0][i]);				//max=profits/weights
 				j=i;
 			}
 		}
 		if(array[0][j]>m)
 		{
-			System.out.println("Quantity of item number: "+ (j+1) + " added is " +m);
-			sum+=m*max;
+			System.out.println("Quantity of item number: "+ (j+1) + " added is " +m);			
+			sum+=m*max;														
 			m=-1;
 		}
 		else
